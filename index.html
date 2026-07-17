@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8b7c8">
+  <title>A Little Place Made For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <audio id="background-music" loop preload="auto">
+    <source src="assets/background-music.mp4" type="audio/mp4">
+  </audio>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Mute background music" hidden>
+    <span class="music-icon">♫</span><span class="music-label">Music on</span>
+  </button>
+
+  <main>
+    <section id="gate-screen" class="screen gate-screen active" aria-label="Wifey gate">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="gate-copy">
+        <span class="eyebrow">A little place made for you</span>
+        <h1>Please open<br><em>the gate</em></h1>
+        <p>There is something I have been wanting to tell you...</p>
+      </div>
+
+      <div class="gate-wrap">
+        <div class="gate-glow"></div>
+        <div class="gate gate-left">
+          <div class="gate-scroll">❦</div>
+          <div class="gate-bars"></div>
+        </div>
+        <div class="gate gate-right">
+          <div class="gate-scroll">❦</div>
+          <div class="gate-bars"></div>
+        </div>
+        <button id="open-gate" class="heart-lock" aria-label="Open the gate">
+          <span>♥</span>
+        </button>
+      </div>
+      <p class="tap-hint">tap the heart to enter</p>
+    </section>
+
+    <section id="auth-screen" class="screen auth-screen" aria-label="Authentication">
+      <div class="floating-decor decor-one">✿</div>
+      <div class="floating-decor decor-two">♡</div>
+      <div class="floating-decor decor-three">❀</div>
+      <div class="auth-card ornamental-card">
+        <span class="card-flower top-left">❀</span><span class="card-flower top-right">❀</span>
+        <span class="card-flower bottom-left">❀</span><span class="card-flower bottom-right">❀</span>
+        <div class="mini-heart">♥</div>
+        <p class="eyebrow dark">For my favorite person</p>
+        <h2>Before you enter...</h2>
+        <p class="auth-question">Enter our special password to unlock .</p>
+        <form id="password-form" class="password-form">
+          <label for="love-password">Our secret password</label>
+          <div class="password-field">
+            <input id="love-password" name="password" type="password" autocomplete="off" placeholder="Enter password" required>
+            <button id="toggle-password" type="button" aria-label="Show password">♡</button>
+          </div>
+          <button type="submit" class="primary-button">Unlock my heart ♡</button>
+        </form>
+        <p id="auth-note" class="auth-note" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="letter-screen" class="screen letter-screen" aria-label="Wifey letter">
+      <div id="heart-rain" class="heart-rain" aria-hidden="true"></div>
+      <header class="reveal-hero">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light">To the one who makes my world brighter</p>
+          <h2>I love you<br><em>so much</em></h2>
+          <p class="hero-subtitle">Every love story is beautiful, but ours is my favorite.</p>
+          <a href="#our-letter" class="scroll-button">Read my heart <span>↓</span></a>
+        </div>
+      </header>
+
+      <div id="our-letter" class="letter-area">
+        <div class="botanical botanical-left" aria-hidden="true">❀<br>❧<br>🌿</div>
+        <div class="botanical botanical-right" aria-hidden="true">🌿<br>❧<br>❀</div>
+        <article class="letter-paper ornamental-card">
+          <div class="wax-seal">♥</div>
+          <p class="letter-date">A letter from my heart to yours</p>
+          <h3>To my beautiful girlfriend,</h3>
+          <p>I want you to know how lucky I feel to have you in my life. You are beautiful in every way, from your smile that brightens my day to your kind heart that makes me feel loved and understood.</p>
+          <p>I love the way your eyes shine when you are happy, the sound of your laugh, and even the little things you do without realizing how special they are.</p>
+          <p>Your beauty is not only in your face but also in the way you care, love, and bring comfort into my life. No matter how many beautiful people I see, my eyes and my heart will always choose you because, to me, you are the most beautiful girl in every possible way.</p>
+          <div class="signature">Forever yours, Jacel. ♡</div>
+        </article>
+
+        <section class="love-movie" aria-label="Our little movie">
+          <p class="eyebrow dark">A moment worth replaying</p>
+          <h3>Our little movie</h3>
+          <div class="video-frame ornamental-card">
+            <span class="video-corner corner-one">❀</span>
+            <span class="video-corner corner-two">❀</span>
+            <video controls playsinline preload="metadata" poster="assets/sunset.jpg">
+              <source src="assets/our-little-movie.mp4" type="video/mp4">
+              Your browser does not support the video player.
+            </video>
+          </div>
+          <p class="movie-caption">One more beautiful piece of our story ♡</p>
+        </section>
+
+        <section class="memories" aria-label="Our memories">
+          <p class="eyebrow dark">Little pieces of us</p>
+          <h3>Our favorite memories</h3>
+          <div class="photo-grid">
+            <figure class="photo photo-tall"><img src="assets/memory-4.jpg" alt="A sweet mirror photo together"><figcaption>My favorite place is beside you</figcaption></figure>
+            <figure class="photo"><img src="assets/memory-3.jpg" alt="A cute selfie together"><figcaption>Us being us ♡</figcaption></figure>
+            <figure class="photo"><img src="assets/memory-2.jpg" alt="A playful photo together"><figcaption>Your smile, my sunshine</figcaption></figure>
+            <figure class="photo"><img src="assets/memory-1.jpg" alt="A warm hug together"><figcaption>Always safe in your arms</figcaption></figure>
+            <figure class="photo photo-wide"><img src="assets/memory-5.jpg" alt="A close-up selfie together"><figcaption>Every ordinary day feels special with you</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="bear-surprise" aria-label="A final bear surprise">
+          <p class="eyebrow dark">One last little surprise</p>
+          <h3>A hug for you</h3>
+          <p class="bear-instruction">Tap the bear ♡</p>
+          <button id="love-bear" class="love-bear" type="button" aria-label="Give the bear a hug" aria-expanded="false">
+            <span class="bear-heart heart-one">♥</span>
+            <span class="bear-heart heart-two">♡</span>
+            <span class="bear-heart heart-three">♥</span>
+            <span class="bear-ear ear-left"></span>
+            <span class="bear-ear ear-right"></span>
+            <span class="bear-head">
+              <span class="bear-eye eye-left"></span>
+              <span class="bear-eye eye-right"></span>
+              <span class="bear-muzzle"><span class="bear-nose"></span><span class="bear-smile"></span></span>
+            </span>
+            <span class="bear-body"></span>
+            <span class="bear-arm arm-left"><span class="bear-paw">♡</span></span>
+            <span class="bear-arm arm-right"><span class="bear-paw">♡</span></span>
+            <span class="bear-foot foot-left"></span>
+            <span class="bear-foot foot-right"></span>
+          </button>
+          <div id="bear-message" class="bear-message" aria-live="polite">
+            <span>I love you so much!</span>
+            <small>This hug is always yours ♡</small>
+          </div>
+        </section>
+
+        <footer>
+          <span class="footer-heart">♥</span>
+          <h3>You will always be my favorite person.</h3>
+          <p>Made for my wifey, just for you.</p>
+          <button id="replay-button" class="text-button">Replay our little story ↻</button>
+        </footer>
+      </div>
+    </section>
+  </main>
+  <div id="photo-lightbox" class="photo-lightbox" role="dialog" aria-modal="true" aria-label="Expanded memory" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close expanded photo">×</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-card">
+      <div class="lightbox-sparkle sparkle-one">✦</div>
+      <div class="lightbox-sparkle sparkle-two">♡</div>
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+      <span id="lightbox-count" class="lightbox-count"></span>
+    </figure>
+    <button id="lightbox-next" class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">›</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
